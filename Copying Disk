@@ -1,0 +1,14 @@
+1. Disk do Disk
+dd if=/dev/sda2 of=/dev/sdb2 bs=512 noerror
+
+2. DCFLDD
+dcfldd if=/dev/sda hash=md5 of=/media/diskimage.dd bs=512 noerror
+   
+- if=/dev/sda is the input device, in this case /dev/sda.
+- hash=md5 tells the command to calculate an MD5 hash of the image that we can use to assure the image integrity.
+- of=/media/diskimage.dd is the file that the disk image with go, in this case on an external device mounted at /media.
+- bs=512 tells the command we want to transfer the image 512 bytes at a time.
+- noerror tells the command that in the case of error continue to do the data transfer, but write zeros where the error occur.
+
+3. FTK Imager
+https://accessdata.com/product-download/ftk-imager-version-3.4.3
