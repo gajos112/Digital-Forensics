@@ -13,3 +13,15 @@ Some tools will mount external device by it own:
 - C.A.IN.E
 - Ewfmount
 - Xmount
+
+////////////////////////////////WINDOWS IMAGE MOUNTING////////////////////////////
+
+1. Arsenal Image Mounter (AIM)
+Free tool that can mount various formts including split files and Encases files.
+
+2. FTK Imager
+Offers image mounting but no latest Encases files
+
+3. OSFMount
+
+4. P2-eXplorer
