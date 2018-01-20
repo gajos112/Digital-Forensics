@@ -1,0 +1,12 @@
+1. DumpIT - it dumps information from RAM memory to RAW file.
+
+2. Volatility
+- Volatility -f <mem dump file.raw> --profile=<suggested profile> --kdbg=<off set> pslist
+- Volatility -f <mem dump file.raw> imageinf - try to indicates the version of system
+- Volatility -f <mem dump file.raw> imageinf --profile=Win7SP1X64
+- Volatility -f <mem dump file.raw> imageinf --kdbg=0x...
+- Volatility -f <mem dump file.raw> hashdump - see hash passwords
+- Volatility -f <mem dump file.raw> cmdscan - see all commands used in CMD
+- Volatility -f <mem dump file.raw> lehistory - see all browser history
+- Volatility -f <mem dump file.raw> Dlllist - show dlls
+- Volatility -f <mem dump file.raw> > info.txt 
