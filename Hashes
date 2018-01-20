@@ -1,0 +1,41 @@
+1. Hash validation tools:
+- HashCalc
+- MD5 Calculator
+- HashMyFiles
+- Md5sum
+- Chaosmd5
+- Autopsy
+- dc3dd
+
+2. Hash type MD5
+- 128-bit value 
+- Very unlikely but possible to have two files get same value
+
+3. Hash type Secure Hash Algorithm (SHA)
+- SHA-1, SHA-224, SHA-256, SHA-384 and SHA-512
+- SHA-1 produces a message digest that is 160-bits long
+- SHA-224 produces a 224 and others represented by number
+
+4. How to check hash
+
+---------------------------------------hashdeep---------------------------------
+root@kali:~/hash_test# hashdeep hash.txt 
+%%%% HASHDEEP-1.0
+%%%% size,md5,sha256,filename
+## Invoked from: /root/hash_test
+## # hashdeep hash.txt
+## 
+18,ed650c02bd24a50eeef0b7b4a7a444f8,1b84e07e77fab43901d7701eb1468e4074c642175b987078eebf231cea913b38,/root/hash_test/hash.txt
+
+---------------------------------------split---------------------------------
+root@kali:~/hash_test# split -n 5 hash.txt hash_parts
+root@kali:~/hash_test# ls
+hash_partsaa  hash_partsab  hash_partsac  hash_partsad  hash_partsae  hash.txt
+
+--------------------------------------combine---------------------------------
+root@kali:~/hash_test# cat hash_partsa* > hash_1.txt
+
+-------------------------------------finaly check---------------------------------
+root@kali:~/hash_test# hashdeep hash.txt | egrep ^[0-9].*,.* && hashdeep hash_1.txt | egrep ^[0-9].*,.*
+18,ed650c02bd24a50eeef0b7b4a7a444f8,1b84e07e77fab43901d7701eb1468e4074c642175b987078eebf231cea913b38,/root/hash_test/hash.txt
+18,ed650c02bd24a50eeef0b7b4a7a444f8,1b84e07e77fab43901d7701eb1468e4074c642175b987078eebf231cea913b38,/root/hash_test/hash_1.txt
