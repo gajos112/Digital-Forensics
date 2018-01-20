@@ -21,13 +21,17 @@ dcfldd if=/dev/sda hash=md5 of=/media/diskimage.dd bs=512 noerror
 5. ddrescure -r1 -v /dev/sdb1 /dev/sdc1 ddrescue1.log (usfeull when you got bad cluster)
 Coppise DATA and attempts to rescure data in the event of read erros.
 
-6. FTK Imager
+6. DD across a network with Netcat
+- Source: dd if=/dev/had bs=16065b | netcat targethost_IP target_port
+- Target: Netcat -l -p target_port | dd of=/dev/hdc bs=16065b
+
+7. FTK Imager
 https://accessdata.com/product-download/ftk-imager-version-3.4.3
 
-7. MOBILedit (tool designted for mobile devices)
+8. MOBILedit (tool designted for mobile devices)
 - http://www.mobiledit.com/http://www.mobiledit.com/
 
-8. Android SDK (tool designted for mobile devices)
+9. Android SDK (tool designted for mobile devices)
 
 ////////////////////////////////Power ON and OFF//////////////////////////////////
 
