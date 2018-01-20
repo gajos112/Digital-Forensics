@@ -15,6 +15,9 @@ dcfldd if=/dev/sda hash=md5 of=/media/diskimage.dd bs=512 noerror
 3. FTK Imager
 https://accessdata.com/product-download/ftk-imager-version-3.4.3
 
+4. MOBILedit (tool designted for mobile devices)
+- http://www.mobiledit.com/http://www.mobiledit.com/
+
 ////////////////////////////////Power ON and OFF//////////////////////////////////
 
 1. Power is ON
