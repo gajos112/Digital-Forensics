@@ -1,0 +1,11 @@
+1. Raw Format (dd)
+- Fast, ignores erros and widely supported
+- Heavy storage requirements
+
+2. Advanced Forensics format (AFF)
+- No size restrictions and compression options
+
+3. Encase Evidence File Format (E01)
+- Expert witness format
+
+4. Others formats
