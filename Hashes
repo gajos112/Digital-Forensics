@@ -20,7 +20,11 @@
 - md5eep file_name
 - md5eep -wM file_name_1 file_name_2
 
-5. How to check hash
+5. Simple tools:
+- sha256sum file_name
+- md5sum _file_name
+
+6. How to check hash
 
 ---------------------------------------hashdeep---------------------------------
 root@kali:~/hash_test# hashdeep hash.txt 
