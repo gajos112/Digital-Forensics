@@ -16,6 +16,10 @@
 - SHA-1 produces a message digest that is 160-bits long
 - SHA-224 produces a 224 and others represented by number
 
+4. md5deep
+- md5eep file_name
+- md5eep -wM file_name_1 file_name_2
+
 4. How to check hash
 
 ---------------------------------------hashdeep---------------------------------
