@@ -1,0 +1,7 @@
+1. EXIFTOOL
+
+- apt-get install exiftool (it is not a part of Kali defaults tools)
+- exiftoll /root/Desktop/Dokcument.docx
+
+It wiull display information us:
+- Creator, Company, Date, Permission, Application.... etc.
