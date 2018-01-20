@@ -1,3 +1,5 @@
+////////////////////////////////How to copy ?//////////////////////////////////
+
 1. Disk do Disk
 dd if=/dev/sda2 of=/dev/sdb2 bs=512 noerror
 
@@ -12,3 +14,14 @@ dcfldd if=/dev/sda hash=md5 of=/media/diskimage.dd bs=512 noerror
 
 3. FTK Imager
 https://accessdata.com/product-download/ftk-imager-version-3.4.3
+
+////////////////////////////////Power ON and OFF//////////////////////////////////
+
+1. Power is ON
+- Collectn the RAM information
+- Encrypted data could be unencrypted in RAM
+- Identify running processes
+
+2. Power is OFF
+- Leave off
+- Make two Bit Copies
