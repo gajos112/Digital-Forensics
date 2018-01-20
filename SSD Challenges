@@ -1,0 +1,35 @@
+1. Hash values may be different due to wear leveling.
+
+2. Data recovery is very challenging.
+
+3. Wear leveling and TRIM are your enemy.
+
+Wear leveling (also written as wear levelling) is a technique[1] for prolonging the service life of some kinds of erasable 
+computer storage media, such as flash memory, which is used in solid-state drives (SSDs) and USB flash drives, 
+and phase change memory. There are several wear leveling mechanisms that provide varying levels of longevity enhancement 
+in such memory systems
+
+The term preemptive wear leveling (PWL) has been used by Western Digital to describe their preservation technique 
+used on hard disk drives (HDDs) designed for storing audio and video data. However, HDDs generally are not wear-leveled devices.
+
+A trim command (known as TRIM in the ATA command set, and UNMAP in the SCSI command set) allows an operating system to 
+inform a solid-state drive (SSD) which blocks of data are no longer considered in use and can be wiped internally
+
+
+--> ONE OF THE SOLUTION (doesn't work on 100%) <--
+
+Write blockers are devices that allow acquisition of information on a drive without creating the possibility of accidentally 
+damaging the drive contents. They do this by allowing read commands to pass but by blocking write commands, hence their name.
+
+There are two ways to build a write-blocker: the blocker can allow all commands to pass from the computer to 
+the drive except for those that are on a particular list. Alternatively, the blocker can specifically block 
+the write commands and let everything else through. 
+
+Image: https://bounga.id/sites/bounga.id/files/styles/extra_large_800x600/public/tableau-t6u-sas-forensic-bridge-write-blocker_0.PNG?itok=QKbd6ge8
+
+////////////////////////////////////////////PL ADDITIONAL INFO///////////////////////////////////
+
+Równoważenie zużycia to wykorzystywanie różnych metod optymalizacji zapisu, pozwalających na wydłużanie czasu, 
+przez który nośnik danych jest zdatny do użycia. Najczęściej jest ono stosowane w pamięciach flash - głównie dyskach SSD.
+Pojęcie to jest również używane przez firmę Western Digital do opisu techniki konserwacji produkowanych przez 
+nią dysków twardych, jednak w ogólności dyski nie są urządzeniami dobrze równoważącymi zużycie.
