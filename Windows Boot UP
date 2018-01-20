@@ -1,0 +1,7 @@
+Three Conditions - Hardware, BIOS and OS function without errors
+
+1. Power-on Self Test Phase
+2. BIOS ROM performs initial checks
+3. Boot Loader Phase - Identify primary partitino
+4. Loader OS Configuration Phase
+5. Security and log-on Phase
