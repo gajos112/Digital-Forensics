@@ -1,0 +1,15 @@
+1. #fdisk -l
+
+2. Create a folder
+- #sudo mkdir /media/name_of_device
+
+3. Edit  /etc/fstab
+- /dev/sdb1 /mnt/sdb1 vfat defaults 0 0
+
+4. mounta -a
+
+Some tools will mount external device by it own:
+- EnCase
+- C.A.IN.E
+- Ewfmount
+- Xmount
