@@ -1,2 +1,21 @@
 1. mmls -V - display the version
-2. 
+2. img_stat file_name
+3. mmls file_name (layout of disk, partions and offset)
+
+root@kali:~# mmls -t list
+Supported partition types:
+	dos (DOS Partition Table)
+	mac (MAC Partition Map)
+	bsd (BSD Disk Label)
+	sun (Sun Volume Table of Contents (Solaris))
+	gpt (GUID Partition Table (EFI))
+
+root@kali:~# mmls -t dos pendrive.dd
+DOS Partition Table
+Offset Sector: 0
+Units are in 512-byte sectors
+
+      Slot      Start        End          Length       Description
+000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)
+001:  -------   0000000000   0000000061   0000000062   Unallocated
+002:  000:000   0000000062   0015726591   0015726530   Linux (0x83)
