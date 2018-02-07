@@ -33,6 +33,11 @@ Units are in 512-byte sectors
 ///////////////////////////////////////////////////////fdisk/////////////////////////////////////////////////////////////////
 
 3. fdisk - Manipulate disk partition table
+
+-l, --list    List  the  partition  tables  for the specified devices and then
+              exit.  If no devices are given, those mentioned in  /proc/parti‐
+              tions (if that file exists) are used.
+
 root@kali:~# fdisk -l /dev/sdb
 Disk /dev/sdb: 14.5 GiB, 15518924800 bytes, 30310400 sectors
 Units: sectors of 1 * 512 = 512 bytes
