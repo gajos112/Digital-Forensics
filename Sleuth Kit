@@ -155,3 +155,30 @@ root@kali:/tmp# mactime -b text.txt -p /etc/passwd -g /etc/passwd
 Wed Feb 07 2018 07:23:44       34 .a.b -/rrwxrwxrwx root     root     41       <sdb-asdasd.txt-dead-41>
 Wed Feb 07 2018 07:23:58       34 m.c. -/rrwxrwxrwx root     root     41       <sdb-asdasd.txt-dead-41>
 
+///////////////////////////////////////////////////////MMLS ERROR/////////////////////////////////////////////////////////////////
+
+8. MMLS Error
+
+Invalid sector address (dos_load_prim_table: Starting sector too large for image) 
+
+You imaged the first partition (sdd1) of the physical disk (sdd).
+That means your image does not contain the partition table that is in
+the first sector of sdd.
+
+However, since your image is a partition image, you can run fsstat to
+read the superblock and tell you what the file system is (assuming
+it's formatted.)
+
+fsstat cruiser-1m.dd
+
+mmls reads the first sector of whatever you hand it and tries to
+interpret it as a partition table.  Since the first sector of your
+partition image does NOT contain a valid partition table, you will get
+nonsense results.
+
+You need to image like this instead:
+
+dd if=/dev/sdd of=cruiser-1m-phys.dd
+
+That will give you a complete image of the physical disk and mmls will
+give you a valid result.
