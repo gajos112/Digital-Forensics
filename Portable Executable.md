@@ -78,7 +78,7 @@ The PE file header is located by indexing the e_lfanew field of the DOS header. 
 
 # OPTIONAL HEADER
 
-# SECTION TABLE
+# SECTION HEADER
 
 # SECTIONS
 
