@@ -1,7 +1,8 @@
 
 --------------------------------------------- LINUX ---------------------------------------------
 
-- # FMEM # - kernel module that creates device /dev/fmem, similar to /dev/mem but without limitations. This device (physical RAM) 
+- # FMEM
+- kernel module that creates device /dev/fmem, similar to /dev/mem but without limitations. This device (physical RAM) 
 can be copied using dd or other tool. Works on 2.6 Linux kernels. Under GNU GPL.
 
 - # LiME - Linux Memory Extractor (LiME) is a Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from 
