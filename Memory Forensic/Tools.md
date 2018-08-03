@@ -26,5 +26,12 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 
 # MEMORY ANALYSIS USING VOLATILITY
 
-**1.** imageinfo –f <file> - Figure out what operating system it belongs to. 
-**2.** 
+**1.** volatility –f <file> imageinfo - Figure out what operating system it belongs to.
+  
+**2.** volatility -f <file> --profile=Win10x64_14393 -h - Display plugins.
+
+**3.** volatility -f <file> --profile=Win10x64_14393 pslist - List processes from memory image.
+
+**4.** volatility -f <file> --profile=Win10x64_14393 psscan - More indeep view of prcocesses can display more proccesses.
+
+  
