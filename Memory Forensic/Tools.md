@@ -15,3 +15,11 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 
 
 # WINDOWS
+
+- **dumpit.exe**
+
+- **winpmem.exe**
+
+- **FTK Imager**
+
+- **Redline - FireEye**
