@@ -5,6 +5,7 @@ The file can be identified by the ASCII string "MZ" (hexadecimal: 4D 5A) at the 
 "MZ" are the initials of Mark Zbikowski, one of leading developers of MS-DOS.
 
 # DOS STUB
+MS-DOS stub is to print message to the user and then exit if the .exe file is run from under MS-DOS.
 
 # PE HEADER
 
