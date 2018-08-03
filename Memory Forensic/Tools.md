@@ -41,3 +41,14 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 **7** volatility -f Desktop/memory-images/xp-laptop-2005-06-25.img --profile=WinXPSP2x86 dumpfiles --dump-dir=./ - Extract memory mapped and cached files
 
 **8**  volatility -f Desktop/memory-images/xp-laptop-2005-06-25.img --profile=WinXPSP2x86 modscan - Pool scanner for kernel modules
+
+
+# CONVERTING HIBERNATION FILES AND CRASH DDUMPS #
+
+imagecopy - Convert alternate memory sources to raw
+  -f Name of source file
+  -O Output file name
+  --profile Source OS from imageinfo
+  
+vol.py imagecopy -f hiberfil.sys -O hiber.raw --profile=Win7SP1x64
+vol.py imagecopy -f MEMORY.DMP -O crashdump.raw –-profile=Win2016x64_14393
