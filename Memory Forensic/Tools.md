@@ -42,6 +42,7 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 
 **8**  volatility -f Desktop/memory-images/xp-laptop-2005-06-25.img --profile=WinXPSP2x86 modscan - Pool scanner for kernel modules
 
+**9**  vvolatility -f Desktop/memory-images/xp-laptop-2005-06-25.img sockscan / netscan
 
 # CONVERTING HIBERNATION FILES AND CRASH DDUMPS #
 
@@ -56,3 +57,7 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 **HIBER:** vol.py imagecopy -f hiberfil.sys -O hiber.raw --profile=Win7SP1x64
 
 **CRASH:** vol.py imagecopy -f MEMORY.DMP -O crashdump.raw –-profile=Win2016x64_14393
+
+**Sleep:** uses just enough power to maintain the information in your PC’s memory. 
+
+**Hibernate:** conserves even more power by writing the information in memory out to the hard drive and essentially shutting down—the. The hiberfil.sys file is located at C:hiberfil.sys If it is not there then you apparently have hibernation turned off. 
