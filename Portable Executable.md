@@ -1,3 +1,37 @@
+      +-------------------+  file offset 0
+      | DOS-header        |
+      +-------------------+
+      | PE/COFF-header    |
+      +-------------------+
+      | optional header   |
+      |- - - - - - - - - -|
+      |                   |
+      | data directories  |
+      | array             |
+      |                   |
+      +-------------------+
+      |                   |
+      | section headers   |
+      | array             |
+      |                   |
+      +-------------------+
+      |                   |
+      | section 1         |
+      |                   |
+      +-------------------+
+      |                   |
+      | section 2         |
+      |                   |
+      +-------------------+
+      |                   |
+      | ...               |
+      |                   |
+      +-------------------+
+      |                   |
+      | section n         |
+      |                   |
+      +-------------------+  end of file
+
 # DOS MZ header
 The DOS MZ executable format is the executable file format used for .EXE files in DOS.
 
