@@ -30,3 +30,13 @@ LNK files are Windows Shortcuts. Windows operating system behind the scenes keep
 The LNK files, like JumpLists, are stored in Shell Link Binary File Format known as [MS-SHLLINK]. When parsed, the LNK file, contains metadata that, among other things, shows the target file Standard Information timestamps, path, size and MFT entry number. 
 
 *This information is maintained even if the target file does no longer exists on the file system.*
+
+#Jump Lists
+Maintain the records of recently accessed files and folders and group them as per application basis. Before the feature was introduced, forensic analysts had access to a short list of Most Recently Used (MRU) and Most Frequently Used (MFU) items in the Windows Registry.
+
+Types:
+**- automatic** (autodest, or *.automaticDestinations-ms) files
+
+**- custom** (custdest, or *.customDestinations-ms) files
+
+**E- xplorer StartPage2** ProgramsCache Registry valu
