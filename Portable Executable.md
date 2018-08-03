@@ -1,5 +1,6 @@
 # Portable Executable 
-(PE) format is a file format for executables, object code, DLLs, Font files, and others used in 32-bit and 64-bit versions of Windows operating systems. For example, PE formatted files include:
+File format for executables, object code, DLLs, Font files, and others used in 32-bit and 64-bit versions of Windows operating systems. For example, PE formatted files include:
+
 **- .exe**
 
 **- .dll**
