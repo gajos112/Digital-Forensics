@@ -7,7 +7,14 @@ The file can be identified by the ASCII string "MZ" (hexadecimal: 4D 5A) at the 
 # DOS STUB
 MS-DOS stub is to print message to the user and then exit if the .exe file is run from under MS-DOS.
 
+“This program cannot be run in DOS mode”
+
 # PE HEADER
+PE header starts with magic string "PE" which we are able in ASCII while opening file with HEX Editor.
+
+# COFF Header
+
+# OPTIONAL HEADER
 
 # SECTION TABLE
 
