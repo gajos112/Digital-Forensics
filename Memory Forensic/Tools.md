@@ -45,10 +45,10 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 
 # CONVERTING HIBERNATION FILES AND CRASH DDUMPS #
 
-imagecopy - Convert alternate memory sources to raw
-  -f Name of source file
-  -O Output file name
-  --profile Source OS from imageinfo
-  
+**IMAGECOPY** - Convert alternate memory sources to raw
+    -f Name of source file
+    -O Output file name
+    --profile Source OS from imageinfo
+
 vol.py imagecopy -f hiberfil.sys -O hiber.raw --profile=Win7SP1x64
 vol.py imagecopy -f MEMORY.DMP -O crashdump.raw –-profile=Win2016x64_14393
