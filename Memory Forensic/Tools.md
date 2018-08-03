@@ -44,7 +44,7 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 
 **9**  vvolatility -f Desktop/memory-images/xp-laptop-2005-06-25.img sockscan / netscan
 
-# CONVERTING HIBERNATION FILES AND CRASH DDUMPS #
+# CONVERTING HIBERNATION FILES AND CRASH DUMPS #
 
 **IMAGECOPY** - Convert alternate memory sources to raw.
 
