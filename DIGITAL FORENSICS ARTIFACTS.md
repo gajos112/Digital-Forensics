@@ -22,3 +22,11 @@ On Windows 7 and beyond the ShellBags registry keys are stored at
 - “HKEY_USERS\{SID}_Classes\​Local Settings\Software\​Microsoft\Windows\Shell\”.
 
 # UserAssist
+The UserAssist registry key keeps track of the applications that were executed by a particular user. The data is encoded using ROT-13 substitution cipher and maintained on the registry key HKEY_USERS\{SID}\Software\​Microsoft\Windows\CurrentVersion​\Explorer\UserAssist.
+
+# LNK Files
+LNK files are Windows Shortcuts. Windows operating system behind the scenes keeps track of recently opened files by creating LNK files within the directory “C:\Documents and Settings\%USERNAME%\Recent\”.
+
+The LNK files, like JumpLists, are stored in Shell Link Binary File Format known as [MS-SHLLINK]. When parsed, the LNK file, contains metadata that, among other things, shows the target file Standard Information timestamps, path, size and MFT entry number. 
+
+*This information is maintained even if the target file does no longer exists on the file system.*
