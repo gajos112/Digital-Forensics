@@ -1,4 +1,11 @@
-      +-------------------+  file offset 0
+# Portable Executable (PE) format is a file format for executables, object code, DLLs, Font files, and others used in 32-bit and 64-bit versions of Windows operating systems. For example, PE formatted files include:
+**- .exe**
+
+**- .dll**
+
+**- .sys (driver files)**
+     
+     +-------------------+  file offset 0
       | DOS-header        |
       +-------------------+
       | PE/COFF-header    |
@@ -44,7 +51,26 @@ MS-DOS stub is to print message to the user and then exit if the .exe file is ru
 “This program cannot be run in DOS mode”
 
 # PE HEADER
-PE header starts with magic string "PE" which we are able in ASCII while opening file with HEX Editor.
+The PE file header is located by indexing the e_lfanew field of the DOS header. The e_lfanew field simply gives the offset in the file to the begining of the PE header. This header begins with a 4 byte signature thats reads 'PE' in ASCII. The PE header is called IMAGE_FILE_HEADER (WINNT.H) and its field are described below:
+
+**1. Signature** The PE signature.
+
+**2. Machine** The architecture type of the computer.This member can be one of the following values:
+- IMAGE_FILE_MACHINE_I386: 0x014c (x86)
+- IMAGE_FILE_MACHINE_IA64: 0x0200 (Intel Itanium)
+- IMAGE_FILE_MACHINE_AMD64: 0x8664 (x64)
+
+**3. NumberOfSections** The number of sections. This indicates the size of the section table, which immediately follows the headers. Note that the Windows loader limits the number of sections to 96.
+
+**4. TimeDateStamp** The low 32 bits of the time stamp of the image. This represents the date and time the image was created by the linker. The value is represented in the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Universal Coordinated Time, according to the system clock.
+
+**5. PointerToSymbolTable** The offset of the symbol table, in bytes, or zero if no PE symbol table exists.
+
+**6. NumberOfSymbols** The number of symbols in the symbol table.
+
+**7. SizeOfOptionalHeader** The size of the optional header, in bytes. This value should be 0 for object files.
+
+**8. Characteristics** The characteristics of the image. Several values.
 
 # COFF Header
 
