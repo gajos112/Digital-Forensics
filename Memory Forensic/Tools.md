@@ -23,3 +23,8 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 - **FTK Imager**
 
 - **Redline - FireEye**
+
+# MEMORY ANALYSIS USING VOLATILITY
+
+**1.** imageinfo –f <file> - Figure out what operating system it belongs to. 
+**2.** 
