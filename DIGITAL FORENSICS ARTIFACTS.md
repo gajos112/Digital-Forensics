@@ -35,9 +35,8 @@ The LNK files, like JumpLists, are stored in Shell Link Binary File Format known
 Maintain the records of recently accessed files and folders and group them as per application basis. Before the feature was introduced, forensic analysts had access to a short list of Most Recently Used (MRU) and Most Frequently Used (MFU) items in the Windows Registry.
 
 Types:
-
 **- automatic** (autodest, or *.automaticDestinations-ms) files
 
 **- custom** (custdest, or *.customDestinations-ms) files
 
-**E- xplorer StartPage2** ProgramsCache Registry valu
+**- Explorer StartPage2** ProgramsCache Registry valu
