@@ -54,4 +54,5 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 *--profile* - Source OS from imageinfo
 
 **HIBER:** vol.py imagecopy -f hiberfil.sys -O hiber.raw --profile=Win7SP1x64
+
 **CRASH:** vol.py imagecopy -f MEMORY.DMP -O crashdump.raw –-profile=Win2016x64_14393
