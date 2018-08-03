@@ -34,4 +34,10 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 
 **4.** volatility -f <file> --profile=Win10x64_14393 psscan - More indeep view of prcocesses can display more proccesses.
 
+**5.** volatility -f <file> --profile=Win10x64_14393 procdump -p PROCCESS_ID --dump-dir=./ - Dump a process to an executable file sample
+
+**6.** volatility -f <file> --profile=Win10x64_14393 memdump -p PROCCESS_ID --dump-dir=./ - To extract all memory resident pages in a process into an individual file, use the memdump command.
   
+**7** volatility -f Desktop/memory-images/xp-laptop-2005-06-25.img --profile=WinXPSP2x86 dumpfiles --dump-dir=./ - Extract memory mapped and cached files
+
+**8**  volatility -f Desktop/memory-images/xp-laptop-2005-06-25.img --profile=WinXPSP2x86 modscan - Pool scanner for kernel modules
