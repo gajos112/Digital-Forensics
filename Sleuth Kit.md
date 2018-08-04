@@ -1,6 +1,6 @@
 # img_stat
+Display details of an image file
 
-1. img_stat - Display details of an image file
 root@kali:/tmp# img_stat /dev/sdb
 IMAGE FILE INFORMATION
 --------------------------------------------
@@ -9,8 +9,7 @@ Image Type: raw
 Size in bytes: 15518924800
 
 # mmls
-
-2. mmls - Display the partition layout of a volume system  (partition tables)
+Display the partition layout of a volume system  (partition tables)
 
 root@kali:~# mmls -t list
 Supported partition types:
@@ -31,8 +30,7 @@ Units are in 512-byte sectors
 002:  000:000   0000000062   0015726591   0015726530   Linux (0x83)
 
 # fdisk
-
-3. fdisk - Manipulate disk partition table
+Manipulate disk partition table
 
 -l, --list    List  the  partition  tables  for the specified devices and then
               exit.  If no devices are given, those mentioned in  /proc/parti‐
@@ -47,8 +45,7 @@ Disklabel type: dos
 Disk identifier: 0x245a2a06
 
 # fsstat
-
-4. fsstat - Display general details of a file system
+Display general details of a file system
 
 root@kali:~# fsstat -o 63 /dev/sdb
 FILE SYSTEM INFORMATION
@@ -93,8 +90,7 @@ $EA (224)   Size: 0-65536   Flags:
 $LOGGED_UTILITY_STREAM (256)   Size: 0-65536   Flags: Non-resident
 
 # fls
-
-5. fls - List file and directory names in a disk image
+List file and directory names in a disk image
 
 root@kali:~# fls -o 63 /dev/sdb
 r/r 4-128-1:	$AttrDef
@@ -119,9 +115,8 @@ d/d 256:	$OrphanFiles
 -d - Display deleted entries only
 -r - Recursively  display  directories.  This will not follow deleted directories, because it can't.
 
-///////////////////////////////////////////////////////fls/////////////////////////////////////////////////////////////////
-
-6. icat - Output the contents of a file based on its inode number.
+# ICAT
+Output the contents of a file based on its inode number.
 
 root@kali:~# icat -o 63 /dev/sdb 41
 asdasdasdasdsads
@@ -129,8 +124,7 @@ asdasdasdasdsads
 TEST TEST TEST
 
 # ils
-
-7. ils - List inode information
+List inode information
 
 root@kali:/tmp# ils -o 63 /dev/sdb
 class|host|device|start_time
@@ -156,8 +150,6 @@ Wed Feb 07 2018 07:23:44       34 .a.b -/rrwxrwxrwx root     root     41       <
 Wed Feb 07 2018 07:23:58       34 m.c. -/rrwxrwxrwx root     root     41       <sdb-asdasd.txt-dead-41>
 
 # MMLS ERROR
-8. MMLS Error
-
 Invalid sector address (dos_load_prim_table: Starting sector too large for image) 
 
 You imaged the first partition (sdd1) of the physical disk (sdd).
