@@ -58,6 +58,7 @@ pseudo-device /dev/crash for raw physical memory access (via command "modprobe c
 
 **CRASH:** vol.py imagecopy -f MEMORY.DMP -O crashdump.raw –-profile=Win2016x64_14393
 
-**Sleep:** uses just enough power to maintain the information in your PC’s memory. 
 
-**Hibernate:** conserves even more power by writing the information in memory out to the hard drive and essentially shutting down—the. The hiberfil.sys file is located at C:hiberfil.sys If it is not there then you apparently have hibernation turned off. 
+**SLEEP MODE:** uses just enough power to maintain the information in your PC’s memory. 
+
+**HIBERNATE MODE:** conserves even more power by writing the information in memory out to the hard drive and essentially shutting down—the. The hiberfil.sys file is located at C:hiberfil.sys If it is not there then you apparently have hibernation turned off. 
