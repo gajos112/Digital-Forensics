@@ -1,7 +1,7 @@
 # img_stat
 Display details of an image file
 
-root@kali:/tmp# img_stat /dev/sdb
+root@kali:/tmp img_stat /dev/sdb
 IMAGE FILE INFORMATION
 --------------------------------------------
 Image Type: raw
