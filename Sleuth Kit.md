@@ -1,4 +1,4 @@
-/////////////////////////////////////////////////////img_stat/////////////////////////////////////////////////////////////////
+# img_stat
 
 1. img_stat - Display details of an image file
 root@kali:/tmp# img_stat /dev/sdb
@@ -8,7 +8,7 @@ Image Type: raw
 
 Size in bytes: 15518924800
 
-///////////////////////////////////////////////////////mmls/////////////////////////////////////////////////////////////////
+# mmls
 
 2. mmls - Display the partition layout of a volume system  (partition tables)
 
@@ -30,7 +30,7 @@ Units are in 512-byte sectors
 001:  -------   0000000000   0000000061   0000000062   Unallocated
 002:  000:000   0000000062   0015726591   0015726530   Linux (0x83)
 
-///////////////////////////////////////////////////////fdisk/////////////////////////////////////////////////////////////////
+# fdisk
 
 3. fdisk - Manipulate disk partition table
 
@@ -46,7 +46,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: dos
 Disk identifier: 0x245a2a06
 
-///////////////////////////////////////////////////////fsstat/////////////////////////////////////////////////////////////////
+# fsstat
 
 4. fsstat - Display general details of a file system
 
@@ -92,7 +92,7 @@ $EA_INFORMATION (208)   Size: 8-8   Flags: Resident
 $EA (224)   Size: 0-65536   Flags: 
 $LOGGED_UTILITY_STREAM (256)   Size: 0-65536   Flags: Non-resident
 
-///////////////////////////////////////////////////////fls/////////////////////////////////////////////////////////////////
+# fls
 
 5. fls - List file and directory names in a disk image
 
@@ -128,7 +128,7 @@ asdasdasdasdsads
 
 TEST TEST TEST
 
-///////////////////////////////////////////////////////ils/////////////////////////////////////////////////////////////////
+# ils
 
 7. ils - List inode information
 
@@ -155,8 +155,7 @@ root@kali:/tmp# mactime -b text.txt -p /etc/passwd -g /etc/passwd
 Wed Feb 07 2018 07:23:44       34 .a.b -/rrwxrwxrwx root     root     41       <sdb-asdasd.txt-dead-41>
 Wed Feb 07 2018 07:23:58       34 m.c. -/rrwxrwxrwx root     root     41       <sdb-asdasd.txt-dead-41>
 
-///////////////////////////////////////////////////////MMLS ERROR/////////////////////////////////////////////////////////////////
-
+# MMLS ERROR
 8. MMLS Error
 
 Invalid sector address (dos_load_prim_table: Starting sector too large for image) 
