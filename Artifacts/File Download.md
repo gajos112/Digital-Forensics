@@ -7,11 +7,11 @@ only including web browsers like Internet Explorer and Firefox, but also a major
 
 **Location:**
 
-- Windows XP:
-NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU
+Windows XP:
+- NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU
 
-- Win7/8/10:
-NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePIDlMRU
+Win7/8/10:
+- NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePIDlMRU
 
 # E-mail Attachments
 
@@ -25,3 +25,52 @@ Outlook XP"
 
 Win7/8/10: 
 - %USERPROFILE%\AppDat
+
+**Interpretation:**
+MS Outlook data files found in these locations include OST and PST files. One should also check the OLK and Content.Outlook folder, which might roam depending on the specific version of Outlook used. 
+
+# Skype History
+
+**Description:**
+
+• Skype history keeps a log of chat nsessions and files transferred from one machine to another
+• This is turned on by default in Skype installations 
+
+**Location:**
+XP:
+- C:\Documents and Settings\<username>\Application\ Skype\<skype-name>
+
+Win7/8/10:
+- C:\%USERPROFILE%\AppData\Roaming\Skype\<skype-name>
+
+Interpretation:
+Each entry will have a date/time value and a Skype username associated with the action.
+
+# Browser Artifacts
+
+**Description:**
+
+Not directly related to “File Download”. Details stored for each local user account. Records number of times visited (frequency).
+
+*Location:*
+
+Internet Explorer:
+• IE8-9 %USERPROFILE%\AppData\Roaming\Microsoft\Windows\
+IEDownloadHistory\index.dat
+• IE10-11 %USERPROFILE%\AppData\Local\Microsoft\Windows\
+WebCache\WebCacheV*.dat
+
+Firefox:
+• v3-25 %userprofile%\AppData\Roaming\Mozilla\ Firefox\
+Profiles\<random text>.default\downloads.sqlite
+• v26+ %userprofile%\AppData\Roaming\Mozilla\ Firefox\
+Profiles\<random text>.default\places.sqlite
+Table:moz_annos
+
+Chrome:
+• Win7/8/10 %USERPROFILE%\AppData\Local\Google\Chrome\User
+Data\Default\History
+
+**Interpretation:**
+Many sites in history will list the files that were opened from remote sites and downloaded to the local system. History will record the
+access to the file on the website that was accessed via a link.
