@@ -110,6 +110,9 @@ Starting with XP SP2 when files are downloaded from the “Internet Zone” via 
 **Interpretation:**
 
 Files with an ADS Zone.Identifier and contains ZoneID=3 were downloaded from the Internet.
+
 • URLZONE_TRUSTED = ZoneID = 2
+
 • URLZONE_INTERNET = ZoneID = 3
+
 • URLZONE_UNTRUSTED = ZoneID = 4
