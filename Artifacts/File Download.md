@@ -101,7 +101,7 @@ Downloads will include:
 • File Save Location • Application Used to Open File
 • Download Start and End Times
 
-# ADS Zone.Identifer
+# ADS (Alternate Data Stream) Zone.Identifer
 
 **Description:**
 
