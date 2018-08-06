@@ -5,6 +5,8 @@
 **HKEY_CURRENT_USER**	Ntuser.dat, Ntuser.dat.log -> <font color="green"> Some green text </font>
 Location: C:\Users\USER_NAME
 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+
 **HKEY_LOCAL_MACHINE\SAM**	Sam, Sam.log, Sam.sav
 
 **HKEY_LOCAL_MACHINE\Security**	Security, Security.log, Security.sav
