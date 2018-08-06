@@ -6,6 +6,17 @@ Whenever someone does a Start -> Run command, it will log the entry for the comm
 **Location:**
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 
+
+# Typed Path
+
+**Description:**
+
+Registry Key that will track full path typed in explorer.
+
+**Location:**
+
+- NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPAths
+
 # UserAssist
 
 **Description:** 
