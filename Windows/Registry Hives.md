@@ -2,7 +2,7 @@
 
 **HKEY_CURRENT_CONFIG**	System, System.alt, System.log, System.sav
 
-**HKEY_CURRENT_USER**	Ntuser.dat, Ntuser.dat.log
+**HKEY_CURRENT_USER**	Ntuser.dat, Ntuser.dat.log -> Location: C:\Users\USER_NAME
 
 **HKEY_LOCAL_MACHINE\SAM**	Sam, Sam.log, Sam.sav
 
