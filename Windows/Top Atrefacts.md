@@ -8,23 +8,6 @@ NTUSER.DAT HIVE NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\Us
 
 **Interpretation:**
 All values are ROT-13 Encoded
-
-• GUID for XP
- - 75048700 Active Desktop
- 
-• GUID for Win7
- - CEBFF5CD Executable File Execution
- - F4E57C4B Shortcut File Execution
- 
-• Program Locations for Win7 Userassist
- - ProgramFilesX64 6D809377-…
- - ProgramFilesX86 7C5A40EF-…
- - System 1AC14E77-…
- - SystemX86 D65231B0-…
- - Desktop B4BFCC3A-…
- - Documents FDD39AD0-…
- - Downloads 374DE290-…
- - UserProfiles 0762D272-…
  
 # Open/Save MRU
 
@@ -61,6 +44,12 @@ Registry Key that will track the last files and folders opened and is used to po
 **Location:** 
 
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+
+# Office Recent Files
+
+**Description:**
+
+MS Office programs will track their own Recent Files list to make it easier for the user to remember the last file they were editing.
 
 # Jump Lists
 
