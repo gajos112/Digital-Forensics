@@ -1,4 +1,4 @@
-# How to copy on Linux
+# How to make system image on Linux
 
 **1. Disk do Disk**
 dd if=/dev/sda2 of=/dev/sdb2 bs=512 noerror
@@ -28,7 +28,7 @@ Coppise DATA and attempts to rescure data in the event of read erros.
 **7. FTK Imager**
 https://accessdata.com/product-download/ftk-imager-version-3.4.3
 
-# How to copy on Windows
+# How to make system image on Windows
 
 **-EnCase Forensic**
 
