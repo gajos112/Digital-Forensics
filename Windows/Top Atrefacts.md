@@ -1,11 +1,9 @@
 # RunMRU Start->Run
 
-***Description:**
-
+**Description: **
 Whenever someone does a Start -> Run command, it will log the entry for the command they executed.
 
-**Location:**
-
+**Location: **
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 
 # UserAssist
