@@ -51,13 +51,17 @@ Registry Key that will track the last files and folders opened and is used to po
 
 **Location:** 
 
-NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+- NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 
 # Office Recent Files
 
 **Description:**
 
 MS Office programs will track their own Recent Files list to make it easier for the user to remember the last file they were editing.
+
+**Location:**
+
+- NTUSER.DAT\Software\Microsoft\Office\VERSION
 
 # Jump Lists
 
@@ -69,8 +73,9 @@ or have recently used quickly and easily. This functionality cannot only be rece
 • The data stored in the AutomaticDestinations folder will each have a unique file prepended with the AppID of the associated application.
 
 **Location:**
-Win7 C:\Users\<user>\AppData\Roaming\Microsoft\Windows\Recent\ AutomaticDestinations
-Interpretation:
+
+- Win7 C:\Users\<user>\AppData\Roaming\Microsoft\Windows\Recent\ AutomaticDestinations
+
 
 # Prefetch
 
