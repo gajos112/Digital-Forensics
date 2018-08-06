@@ -44,96 +44,88 @@ Example: Notepad.exe was last run using the C:\Users\<Username>\Desktop folder
 
 Tracks the application executables used to
 
-Jump Lists
-Description:
-• The Windows 7 task bar (Jump List) is engineered to
-allow users to “jump” or access items they frequently
-or have recently used quickly and easily. This
-functionality cannot only be recent media files, but
-recent tasks as well.
-• The data stored in the AutomaticDestinations folder
-will each have a unique file prepended with the
-AppID of the associated application.
-Location:
-Win7 C:\Users\<user>\AppData\Roaming\Microsoft\
-Windows\Recent\ AutomaticDestinations
-Interpretation:
-• First time of execution of application.
-- Creation Time = First time item added to the AppID
-file.
-• Last time of execution of application w/file open.
-- Modification Time = Last time item added to the
-AppID file.
-• List of Jump List IDs -> http://www.forensicswiki.
-org/wiki/List_of_Jump_List_IDs
+# Jump Lists
 
-Prefetch
-Description:
-• Increases performance of a system by pre-loading
-code pages of commonly used applications. Cache
-Manager monitors all files and directories referenced
-for each application or process and maps them into a
+**Description:**
+
+• The Windows 7 task bar (Jump List) is engineered to allow users to “jump” or access items they frequently
+or have recently used quickly and easily. This functionality cannot only be recent media files, but recent tasks as well. 
+
+• The data stored in the AutomaticDestinations folder will each have a unique file prepended with the AppID of the associated application.
+
+**Location:**
+Win7 C:\Users\<user>\AppData\Roaming\Microsoft\Windows\Recent\ AutomaticDestinations
+Interpretation:
+
+# Prefetch
+
+**Description:**
+
+• Increases performance of a system by pre-loading code pages of commonly used applications. Cache Manager monitors all files and directories referenced for each application or process and maps them into a
 .pf file. Utilized to know an application was executed
 on a system.
-• Limited to 128 files on XP and Win7
-• (exename)-(hash).pf
-Location:
-Win7/XP C:\Windows\Prefetch
-Interpretation:
-• Each .pf will include last time of execution, # of times
-run, and device and file handles used by the program
-• Date/Time File by that name & path was first executed
-- Creation Date of .pf file (-10 seconds)
-• Date/Time File by that name & path was last executed
-- Embedded last execution time of .pf file
-- Last Modification Date of .pf file (-10 seconds)
 
-Shell bags
-Description:
-• Can track user window viewing preferences to Windows
-Explorer
+• Limited to 128 files on XP and Win7
+
+• (exename)-(hash).pf
+
+**Location:**
+
+Win7/XP C:\Windows\Prefetch
+
+# Shell bags
+
+**Description:**
+
+• Can track user window viewing preferences to Windows Explorer
+
 • Can be utilized to tell if activity occurred in a folder
-• In some cases, you can see the files from a specific folder as
-well
+
+• In some cases, you can see the files from a specific folder as well
+
 Location:
+
 XP NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags
 XP NTUSER.DAT\Software\Microsoft\Windows\Shell\BagMRU
-XP NTUSER.DAT\Software\Microsoft\Windows\ShellNoRoam\
-Bags
-XP NTUSER.DAT\Software\Microsoft\Windows\ShellNoRoam\
-BagMRU
-Win7 USRCLASS.DAT\Local Settings\Software\Microsoft\
-Windows\Shell\Bags
-Win7 USRCLASS.DAT\Local Settings\Software\Microsoft\
-Windows\Shell\BagMRU
+XP NTUSER.DAT\Software\Microsoft\Windows\ShellNoRoam\Bags
+XP NTUSER.DAT\Software\Microsoft\Windows\ShellNoRoam\BagMRU
+
+Win7 USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\Bags
+Win7 USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\BagMRU
 Win7 NTUSER.DAT\Software\Microsoft\Windows\Shell\BagMRU
 Win7 NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags
-Interpretation:
-Store information about which folders were most recently
-browsed by the user.
 
-Shortcut (LNK) Files
-Description:
+# Shortcut (LNK) Files
+
+**Description:**
+
 • Shortcut Files automatically created by Windows
  - Recent Items
- - Opening local and remote data files and documents
-will generate a shortcut file (.lnk)
-Location:
+ - Opening local and remote data files and documents will generate a shortcut file (.lnk)
+ 
+**Location:**
+
 XP C:\Documents and Settings\<username>\Recent\
-Win7 C:\Users\<user>\AppData\Roaming\Microsoft\
-Windows\Recent\
-Win7 C:\Users\<user>\AppData\Roaming\Microsoft\
-Office\Recent\
-Note these are primary locations of LNK files. They can
-also be found in other locations.
-Interpretation:
-• Date/Time File of that name was first opened
-- Creation Date of Shortcut (LNK) File
-• Date/Time File of that name was last opened
-- Last Modification Date of Shortcut (LNK) File
-• LNKTarget File (Internal LNK File Information) Data:
-- Modified, Access, and Creation times of the target file
-- Volume Information (Name, Type, Serial Number)
-- Network Share information
-- Original Location
-- Name of System
+
+Win7 C:\Users\<user>\AppData\Roaming\Microsoft\Windows\Recent\
+Win7 C:\Users\<user>\AppData\Roaming\Microsoft\Office\Recent\
+
+# Shimcache
+
+**Description:**
+
+Shimcache also known as AppCompatCache, is a component of the Application Compatibility Database, which was created by Microsoft (beginning in Windows XP) and used by the operating system to identify application compatibility issues.
+
+The cache stores various file metadata depending on the operating system, such as:
+
+- File Full Path
+
+- File Size
+
+- $Standard_Information (SI) Last Modified time
+
+- Shimcache Last Updated time
+
+- Process Execution Flag
+
+Similar to a log file, the Shimcache also “rolls” data, meaning that the oldest data is replaced by new entries.
