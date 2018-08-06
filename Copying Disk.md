@@ -1,9 +1,9 @@
 # How to copy on Linux
 
-**Disk do Disk**
+**1. Disk do Disk**
 dd if=/dev/sda2 of=/dev/sdb2 bs=512 noerror
 
-**DCFLDD (developed by defense computer forensics lab)**
+**2. DCFLDD (developed by defense computer forensics lab)**
 dcfldd if=/dev/sda hash=md5 of=/media/diskimage.dd bs=512 noerror
    
 - if=/dev/sda is the input device, in this case /dev/sda.
@@ -12,20 +12,20 @@ dcfldd if=/dev/sda hash=md5 of=/media/diskimage.dd bs=512 noerror
 - bs=512 tells the command we want to transfer the image 512 bytes at a time.
 - noerror tells the command that in the case of error continue to do the data transfer, but write zeros where the error occur.
 
-**Dc3DD (developed by defense cymber crime center)**
+**3. Dc3DD (developed by defense cymber crime center)**
 - use dd and adds other capabilities
 - faster than dd
 
-**GUYMAGER (GUI tools for Linux, free)**
+**4. GUYMAGER (GUI tools for Linux, free)**
 
-**ddrescure -r1 -v /dev/sdb1 /dev/sdc1 ddrescue1.log (usfeull when you got bad cluster)**
+**5. ddrescure -r1 -v /dev/sdb1 /dev/sdc1 ddrescue1.log (usfeull when you got bad cluster)**
 Coppise DATA and attempts to rescure data in the event of read erros.
 
-**DD across a network with Netcat**
+**6. DD across a network with Netcat**
 - Source: dd if=/dev/had bs=16065b | netcat targethost_IP target_port
 - Target: Netcat -l -p target_port | dd of=/dev/hdc bs=16065b
 
-**FTK Imager**
+**7. FTK Imager**
 https://accessdata.com/product-download/ftk-imager-version-3.4.3
 
 # How to copy on Windows
