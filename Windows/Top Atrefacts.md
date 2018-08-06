@@ -4,7 +4,7 @@
 Whenever someone does a Start -> Run command, it will log the entry for the command they executed.
 
 **Location:**
-NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+- NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 
 
 # Typed Path
@@ -23,7 +23,7 @@ Registry Key that will track full path typed in explorer.
 GUI-based programs launched from the desktop are tracked in the launcher on a Windows System.
 
 **Location:** 
-NTUSER.DAT HIVE NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count
+- NTUSER.DAT HIVE NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count
 
 **Interpretation:**
 All values are ROT-13 Encoded
