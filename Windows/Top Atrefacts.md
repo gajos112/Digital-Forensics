@@ -52,9 +52,15 @@ Example: Notepad.exe was last run using the C:\Users\<Username>\Desktop folder
 
 - Win7 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU
 
-**Interpretation:**
+# Recent Files
 
-Tracks the application executables used to
+**Description:**
+
+Registry Key that will track the last files and folders opened and is used to populate data in “Recent” menus of the Start menu.
+
+**Location:** 
+
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 
 # Jump Lists
 
