@@ -1,4 +1,4 @@
-#serAssist
+# UserAssist
 
 **Description:** 
 GUI-based programs launched from the desktop are tracked in the launcher on a Windows System.
