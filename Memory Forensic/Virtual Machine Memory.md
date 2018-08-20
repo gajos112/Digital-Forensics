@@ -1,4 +1,4 @@
-# VMare
+# VMware
 
 - .vmem file = raw memory image
 
