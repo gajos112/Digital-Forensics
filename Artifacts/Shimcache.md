@@ -17,8 +17,10 @@ Similar to a log file, the Shimcache also “rolls” data, meaning that the old
 The amount of data retained varies by operating system.
 This helps developers troubleshoot legacy functions and contains data related to Windows features: it is used for quick search to decide whether modules need shimming for compatibility or not.
 A Shim is a small library that transparently handles the applications interworking’s to provide support for older APIs in a newer environment or vice-versa.
-The Registry Key related to this cache is located at
-HKLM\SYSTEM\CurrentControlSet\Control\SessionManager\AppCompatCache\AppCompatCache
+
+The **Registry Key** related to this cache is located at:
+
+- HKLM\SYSTEM\CurrentControlSet\Control\SessionManager\AppCompatCache\AppCompatCache
 
 **Tools:**
 
