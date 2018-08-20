@@ -13,6 +13,7 @@ A **common location** for Amcache.hve is:
 
 Amcache.hve file is also an important artifact to record the traces of anti-forensic programs, portable programs, and external storage devices.
 
+
 **Tools:**
 
 - Amcacheparser: Windows command line tool (free), https://ericzimmerman.github.io
