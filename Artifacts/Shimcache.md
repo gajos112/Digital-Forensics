@@ -2,6 +2,7 @@
 
 Shimcache, also known as AppCompatCache, is a component of the Application Compatibility Database, which was created by Microsoft (beginning in Windows XP) and used by the operating system to identify application compatibility issues.
 The cache stores various file metadata depending on the operating system, such as:
+
 •	File Full Path
 
 •	File Size
