@@ -10,6 +10,5 @@ Cache-files store raw bitmaps in the form of tiles. The size of each tile can va
 
 **Tools:**
 
-- 
-RDP Cached Bitmap Extractor - https://www.guidancesoftware.com/app/RDP-Cached-Bitmap-Extractor
+- RDP Cached Bitmap Extractor - https://www.guidancesoftware.com/app/RDP-Cached-Bitmap-Extractor
 - bmc-tools - https://github.com/ANSSI-FR/bmc-tools
