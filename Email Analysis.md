@@ -53,3 +53,31 @@ X-Mailer: The mail client (mail program) used to send the message
 From: The message sender in the format: "Friendly Name" <email@address.tld>
 To: The message recipient in the format: "Friendly Name" <email@address.tld>
 Subject: The message subject
+
+# SPF
+
+The Sender Policy Framework SPF is a framework to prevent sender address forgery.
+
+In easy words (simplified): 
+"SPF is used to describe what mail server is allowed to send messages for a domain".
+See also: How to enable Sender Policy Framework (SPF) for domain/email
+
+It's used to avoid fake email addresses (as sender email address). The system can detect if the mail server, which wants to send a message to the recipients mail-exchanger, is valid for the senders email address (domain).
+
+The result can be:
+- Received-SPF: neutral
+- Received-SPF: pass
+
+# DomainKeys Identified Mail (DKIM)
+
+"Domain Keys Identified Mail (DKIM) is a method for associating a domain name to an email, thereby allowing an organization to take responsibility for a message in a way that can be validated by a recipient." ... from Wikipedia.org
+
+In other words (simplified): 
+"Some organization (domain) has signed the message and is responsible for it".
+
+It's a good indicator, that the message is NOT a spam message. No spammer would "sign" a message.
+
+# SpamAssassin's Header Lines
+SpamAssassin is a anti-spam software, which is installed on many mail server. It's a great tool, which gives a detailed report for each message by adding lines and a summary to the message header.
+
+A X-Spam-Score <5 means (on most systems) no spam, >5 probably spam and >15 spam. Spam might get deleted immediately or moved to the junk mail folder. Some systems add [SPAM] to the subject, so that these messages could be moved to the junk folder in the mail client using a rule.
