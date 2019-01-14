@@ -26,8 +26,11 @@ Select the message in the list, right-click on it and select "Properties" and go
 Sample Message Header:
 
 Return-path: <sender@senderdomain.tld>
+
 Delivery-date: Wed, 13 Apr 2011 00:31:13 +0200
+
 (3)Received: from mailexchanger.recipientdomain.tld([ccc.ccc.ccc.ccc])
+
 by mailserver.recipientdomain.tld running ExIM with esmtp
 id xxxxxx-xxxxxx-xxx; Wed, 13 Apr 2011 01:39:23 +0200
 (2)Received: from mailserver.senderdomain.tld ([bbb.bbb.bbb.bbb] helo=mailserver.senderdomain.tld)
