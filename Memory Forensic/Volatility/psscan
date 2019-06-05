@@ -1,0 +1,1 @@
+psscan --output=dot --output-file=proceses.dot
