@@ -1,0 +1,1 @@
+vol.py -f memory.img  yarascan -Y "https:"
