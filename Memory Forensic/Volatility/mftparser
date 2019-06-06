@@ -1,0 +1,1 @@
+volatility -f /root/Desktop/memory_broken_dropper --profile=Win7SP1x64 mftparser --output=body --output-file=MFT.txt
