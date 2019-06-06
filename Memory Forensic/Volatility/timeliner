@@ -1,0 +1,1 @@
+volatility -f /root/Desktop/memory_broken_dropper --profile=Win7SP1x64 timeliner --output=body --output-file=timeliner.txt
