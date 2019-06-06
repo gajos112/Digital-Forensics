@@ -1,0 +1,3 @@
+$ vol.py -f ~/Desktop/win7_trial_64bit.raw --profile=Win7SP0x64 printkey -K "Software\Microsoft\Windows NT\CurrentVersion"
+
+https://www.andreafortuna.org/2017/07/31/volatility-my-own-cheatsheet-part-6-windows-registry/
