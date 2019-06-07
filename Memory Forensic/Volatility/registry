@@ -1,3 +1,56 @@
 $ vol.py -f ~/Desktop/win7_trial_64bit.raw --profile=Win7SP0x64 printkey -K "Software\Microsoft\Windows NT\CurrentVersion"
 
 https://www.andreafortuna.org/2017/07/31/volatility-my-own-cheatsheet-part-6-windows-registry/
+
+------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------Command-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+root@kali:~# volatility -f /root/Desktop/memory_broken_dropper --profile=Win7SP1x64 printkey -K "controlset001\control\computername"
+Volatility Foundation Volatility Framework 2.6
+Legend: (S) = Stable   (V) = Volatile
+
+----------------------------
+Registry: \REGISTRY\MACHINE\SYSTEM
+Key name: ComputerName (S)
+Last updated: 2019-06-05 20:20:33 UTC+0000
+
+Subkeys:
+  (S) ComputerName
+  (V) ActiveComputerName
+
+Values:
+
+------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------Command-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+root@kali:~# volatility -f /root/Desktop/memory_broken_dropper --profile=Win7SP1x64 printkey -K "controlset001\control\computername\ComputerName"
+Volatility Foundation Volatility Framework 2.6
+Legend: (S) = Stable   (V) = Volatile
+
+----------------------------
+Registry: \REGISTRY\MACHINE\SYSTEM
+Key name: ComputerName (S)
+Last updated: 2018-12-21 14:55:35 UTC+0000
+
+Subkeys:
+
+Values:
+REG_SZ                        : (S) mnmsrvc
+REG_SZ        ComputerName    : (S) MICHAL-KOMPUTER
+
+------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------Command-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+For system startup:
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+For user logons:
+HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows
+HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Run
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
