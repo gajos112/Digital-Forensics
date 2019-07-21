@@ -82,6 +82,9 @@ NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{GUID}\Coun
 
 - {F4E57C4B-2036-45F0-A9AB-443BCFE33D9F} = Shortcut File Execution
 
+<br/>
+
+
 **Win XP/Vista**
 
 All values begin with 
@@ -107,6 +110,8 @@ All values begin with
 •Launched from a Desktop Shortcut 
 
 •UEME_UITTOOLBAR •Launched from the Windows Explorer ToolbarNTUSER.DAT HIVE
+
+<br/>
 
 **Win 7/8**
 
