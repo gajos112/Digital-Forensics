@@ -118,12 +118,14 @@ All values begin with
 
 - Timestamps are not recorded as each program is a value. 
 
-•Win XP 
+**Win XP**
 
-•NTUSER.DAT\Software\Microsoft\Windows\ShellNoRoam\MUICache  
+NTUSER.DAT\Software\Microsoft\Windows\ShellNoRoam\MUICache  
 
-•Win 7/8 
+<br/>
 
-•USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\MuiCache 
+**Win 7/8**
+
+USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\MuiCache 
 
 •Consider processing Volume Shadow Copies (VSC) 
