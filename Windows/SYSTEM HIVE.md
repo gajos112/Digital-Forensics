@@ -32,5 +32,6 @@ SYSTEM\CurrentControlSet\Services\lanmanserver\Shares
 
 # System Shutdown Timestamps and Counters (XP)
 
-SYSTEM\CurrentControlSet\Control\Windows 
+SYSTEM\CurrentControlSet\Control\Windows
+
 SYSTEM\CurrentControlSet\Control\Watchdog\Display
