@@ -23,6 +23,7 @@ SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed
 # Network Type:
 
 SOFTWARE\Microsoft\WZCSVC\Parameters\Interfaces\{GUID} (XP)
+
 SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles (Vista/7/8)
 
 - NameType 0x47 = Wireless 
