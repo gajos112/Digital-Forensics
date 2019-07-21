@@ -106,4 +106,5 @@ All values begin with
 •UEME_UITTOOLBAR •Launched from the Windows Explorer ToolbarNTUSER.DAT HIVE
 
 **Win 7/8**
+
 •http://www.aldeid.com/wiki/Windows-userassist-keys#Translation_of_directoriesNTUSER.DAT HIVE
