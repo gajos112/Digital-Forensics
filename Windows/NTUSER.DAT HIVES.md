@@ -52,7 +52,7 @@ NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveM
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidMRU **(Vista/7/8)**
 
 
-
+<br/>
 **Last Visited - records specific executable used to open the files along with the directory that was last accessed.**  
 
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU **(XP)**
