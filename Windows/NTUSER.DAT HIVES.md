@@ -42,3 +42,8 @@ NTUSER.DAT\Software\Microsoft\Office\14.0\Powerpoint\FileMRU
 - Office 2007 - Version 12.0
 
 - Office 2010 - Version 14.0
+
+# Common Dialogs API (ComDlg32) 
+**-Open and Save As APIs**
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU **(XP)**
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidMRU **(Vista/7/8)**
