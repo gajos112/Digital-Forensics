@@ -36,6 +36,9 @@ NTUSER.DAT\Software\Microsoft\Office\14.0\Excel\FileMRU
 NTUSER.DAT\Software\Microsoft\Office\14.0\Powerpoint\FileMRU 
 
 •Office XP - Version 10.0
+
 •Office 2003 - Version 11.0 
+
 Office 2007 - Version 12.0
+
 •Office 2010 - Version 14.0
