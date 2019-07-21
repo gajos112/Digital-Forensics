@@ -21,3 +21,16 @@ SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 # Last Access Timestamp (enable/disable)
 
 SYSTEM\CurrentControlSet\Control\FileSystem
+
+# Network Interfaces:
+
+SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+
+# User Shares Enable:
+
+SYSTEM\CurrentControlSet\Services\lanmanserver\Shares
+
+# System Shutdown Timestamps and Counters (XP)
+
+SYSTEM\CurrentControlSet\Control\Windows 
+SYSTEM\CurrentControlSet\Control\Watchdog\Display
