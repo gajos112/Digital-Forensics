@@ -56,3 +56,45 @@ NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveP
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU **(XP)**
 
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidMRU **(Vista/7/8)**
+
+# Commands Executed from the Run Box
+
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU 
+
+MRU List provides the order in which the commands were executed.
+
+# UserAssit
+
+Records what application(s) a user has run, when and how many times: 
+
+NTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{GUID}\Count
+
+- Valuable resource to determine user activity and technical knowledge.
+
+- Values are encoded using a simple substation cipher (ROT13).
+
+- Run count starts a 6(?) .... some viewers will automatically adjust this value so it is important to know what your tool is doing 
+
+- {CEBFF5CD-ACE2-4F4F-9178-9926F41749EA} = Executable File
+
+- {F4E57C4B-2036-45F0-A9AB-443BCFE33D9F} = Shortcut File Execution
+
+**Win XP/Vista**
+
+All values begin with 
+
+•UEME_RUNPATH 
+
+•Launched from the Absolute Path 
+•UEME_RUNCPL 
+•Launched from the Control Panel Applet 
+•UEME_RUNPIDL 
+•Launched from a Shortcut 
+•UEME_UIQCUT 
+•Launched from the Quick Launch Menu 
+•UEME_UISCUT 
+•Launched from a Desktop Shortcut 
+•UEME_UITTOOLBAR •Launched from the Windows Explorer ToolbarNTUSER.DAT HIVE
+
+**Win 7/8**
+•http://www.aldeid.com/wiki/Windows-userassist-keys#Translation_of_directoriesNTUSER.DAT HIVE
