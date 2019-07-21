@@ -46,13 +46,14 @@ NTUSER.DAT\Software\Microsoft\Office\14.0\Powerpoint\FileMRU
 # Common Dialogs API (ComDlg32) 
 **Open and Save As APIs**  
 
+<br/>
 
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU **(XP)**
 
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidMRU **(Vista/7/8)**
 
-
 <br/>
+
 **Last Visited - records specific executable used to open the files along with the directory that was last accessed.**  
 
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU **(XP)**
@@ -110,3 +111,15 @@ All values begin with
 **Win 7/8**
 
 •http://www.aldeid.com/wiki/Windows-userassist-keys#Translation_of_directoriesNTUSER.DAT HIVE
+
+# MUICache Multi-language User Interface 
+
+- One more location to see if a program was executed even if the program was uninstalled. 
+
+- Timestamps are not recorded as each program is a value. 
+•Win XP 
+•NTUSER.DAT\Software\Microsoft\Windows\ShellNoRoam\MUICache  
+
+•Win 7/8 
+•USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\MuiCache 
+•Consider processing Volume Shadow Copies (VSC) 
