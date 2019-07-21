@@ -30,3 +30,11 @@ SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles (Vista/7/8)
 - NameType 0x06 = Wired 
 - NameType 0x17 = Broadband
 - Date fields are recorded as 128-bit System date .... use Dcode to convert.
+
+# AUTO-START PROGRAMS:
+
+SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+
+SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+
+SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
