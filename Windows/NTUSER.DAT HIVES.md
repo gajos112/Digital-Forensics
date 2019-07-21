@@ -44,7 +44,14 @@ NTUSER.DAT\Software\Microsoft\Office\14.0\Powerpoint\FileMRU
 - Office 2010 - Version 14.0
 
 # Common Dialogs API (ComDlg32) 
-**-Open and Save As APIs**
+**Open and Save As APIs**
 
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU **(XP)**
+
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidMRU **(Vista/7/8)**
+
+**Last Visited - records specific executable used to open the files along with the directory that was last accessed.**
+
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU **(XP)**
+
+NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidMRU **(Vista/7/8)**
