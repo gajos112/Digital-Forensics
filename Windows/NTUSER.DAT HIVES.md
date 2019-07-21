@@ -114,11 +114,11 @@ All values begin with
 
 # MUICache Multi-language User Interface 
 
-<br/>
-
 - One more location to see if a program was executed even if the program was uninstalled. 
 
 - Timestamps are not recorded as each program is a value. 
+
+<br/>
 
 **Win XP**
 
