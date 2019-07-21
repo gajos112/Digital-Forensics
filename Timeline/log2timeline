@@ -1,0 +1,24 @@
+https://digital-forensics.sans.org/media/log2timeline_cheatsheet.pdf?source=post_page---------------------------
+
+psteal.py --source ~/cases/greendale/registrar.dd -o l2tcsv -w /tmp/registrar.csv
+
+https://plaso.readthedocs.io/en/latest/sources/user/Collection-Filters.html
+https://github.com/ForensicArtifacts/artifacts/blob/master/artifacts/definitions.py
+
+log2timeline.py --artifact-filters WindowsEventLogSystem name.plaso source.raw
+
+
+
+
+log2timeline.exe "C:\OUTPUT_1.plaso" "C:\INPUT_PATH\IMAGE.E01"
+
+    C:\OUTPUT_1.plaso is the Out-Put file.
+    C:\INPUT_PATH\IMAGE.E01 is the image.
+
+
+psort.exe -z US/Pacific -o l2tcsv -w "C:\FINAL_TIMELINE_OUTPUT.csv" "C:\INPUT_PATH\OUTPUT_1.plaso"
+
+    -o l2tcsv “-o” specifies the format of the output file (L2TCSV).
+    -z US/Pacific “-z” specifies the timezone that you want (US/Pacific).
+    C:\FINAL_TIMELINE_OUTPUT.csv is the time line CSV output.
+    C:\INPUT_PATH\OUTPUT_1.plaso is the input plaso file.
