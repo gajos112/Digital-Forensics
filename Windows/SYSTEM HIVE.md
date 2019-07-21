@@ -2,13 +2,13 @@
 
 SYSTEM\Select\Current
 
-Answers the following questions: 
+**Answers the following questions:**
 
-•Which configuration files should be loaded? 
+  •Which configuration files should be loaded? 
 
-•If an error is detected, which configuration files should be tried next? 
+  •If an error is detected, which configuration files should be tried next? 
 
-•Which configuration files reported errors?
+  •Which configuration files reported errors?
 
 # Computer Name: 
 
