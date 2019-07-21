@@ -86,14 +86,23 @@ All values begin with
 •UEME_RUNPATH 
 
 •Launched from the Absolute Path 
+
 •UEME_RUNCPL 
+
 •Launched from the Control Panel Applet 
+
 •UEME_RUNPIDL 
+
 •Launched from a Shortcut 
+
 •UEME_UIQCUT 
+
 •Launched from the Quick Launch Menu 
+
 •UEME_UISCUT 
+
 •Launched from a Desktop Shortcut 
+
 •UEME_UITTOOLBAR •Launched from the Windows Explorer ToolbarNTUSER.DAT HIVE
 
 **Win 7/8**
