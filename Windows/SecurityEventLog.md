@@ -54,13 +54,10 @@ A new process has been created.
 
 Creator Subject:
 
- Security ID:  SYSTEM
- 
- Account Name:  RFSH$
- 
- Account Domain:  LAB
- 
- Logon ID:  0x3E7
+ Security ID:  SYSTEM <br />
+ Account Name:  RFSH$ <br />
+ Account Domain:  LAB <br />
+ Logon ID:  0x3E7 <br />
  
 Target Subject:
  Security ID:  LAB\rsmith
