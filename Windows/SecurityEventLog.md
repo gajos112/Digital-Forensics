@@ -35,3 +35,13 @@
 - 4779 - Session Disconnected
 
 Both events contatin information about IP and hostname. Event 4778 will be followed by 4624 (successful logon) and 4779 and 4647 (successful logout). Windows workstation allows only only one interactive logon at time. When RDP is done to system that has a user logged into the console need to disconnect him. 
+
+# File and folder Access
+
+- 4656 - A handle to an object was requested
+
+- 4660 - An object was deleted
+
+- 4663 - An attempt was made to access an object
+
+Keywords: Audit Success / Audit Failure
