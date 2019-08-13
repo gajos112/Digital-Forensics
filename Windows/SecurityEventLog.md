@@ -1,10 +1,12 @@
 # Logons attempts
 
-4624
-4625
-4634
-4647
-4672
+- 4624 - successful Logon
+
+- 4625 - failed Logon
+
+- 4634/4647 - Successful Logoff
+
+- 4672 - Account logon with superuser rights (Administrator)
 
 # Tracking usage of RDP
 
