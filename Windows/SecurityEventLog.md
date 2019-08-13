@@ -59,20 +59,20 @@ Creator Subject:
  Account Domain:  LAB <br />
  Logon ID:  0x3E7 <br />
  
-Target Subject:
- Security ID:  LAB\rsmith
- Account Name:  rsmith
- Account Domain:  LAB
- Logon ID:  0x2C9D82
+Target Subject:<br />
+ Security ID:  LAB\rsmith<br />
+ Account Name:  rsmith<br />
+ Account Domain:  LAB<br />
+ Logon ID:  0x2C9D82<br />
 
-Process Information:
- New Process ID:  0x2e0e4
- New Process Name: C:\Windows\System32\RuntimeBroker.exe
- Token Elevation Type: %%1938
- Mandatory Label:  Mandatory Label\Medium Mandatory Level
- Creator Process ID: 0x268
- Creator Process Name: C:\Windows\System32\svchost.exe
- Process Command Line: 
+Process Information:<br />
+ New Process ID:  0x2e0e4<br />
+ New Process Name: C:\Windows\System32\RuntimeBroker.exe<br />
+ Token Elevation Type: %%1938<br />
+ Mandatory Label:  Mandatory Label\Medium Mandatory Level<br />
+ Creator Process ID: 0x268<br />
+ Creator Process Name: C:\Windows\System32\svchost.exe<br />
+ Process Command Line: <br />
  
  # USB (Windows 2016 and 10)
  
