@@ -42,6 +42,4 @@ Both events contatin information about IP and hostname. Event 4778 will be follo
 
 - 4660 - An object was deleted
 
-- 4663 - An attempt was made to access an object
-
-Keywords: Audit Success / Audit Failure
+- 4663 - An attempt was made to access an object (Keywords: Audit Success / Audit Failure)
