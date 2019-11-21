@@ -37,12 +37,15 @@
   :link: *Connection closed*  
   
 
-### Event ID 21
 
 
 
-### Session Disconnect/Reconnect
-
-
-
-### Logoff
+## Event ID 21
+## Event ID 22
+## Event ID 24
+   - [Windows event ID = 25](#Event-ID-25)
+   - [Windows event ID = 39](#Event-ID-39)
+   - [Windows event ID = 40](#Event-ID-40)
+  
+  :link: *Logoff*
+   - [Windows event ID = 23](#Event-ID-23)
