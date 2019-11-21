@@ -1,9 +1,5 @@
 :one: **Log: Microsoft-Windows-TerminalServices-LocalSessionManager/Operational** 
 
-:two: **Log: Microsoft-Windows-Terminal-Services-RemoteConnectionManager/Operational**
-
-:link: **Log: Security**
-
   :link: *Logon*
   - [checklist](#checklist) 
  
@@ -13,7 +9,12 @@
   :link: *Logoff* 
   - [gobuster](#gobuster)
 
-:three: **Log: Systemn**
+
+:two: **Log: Microsoft-Windows-Terminal-Services-RemoteConnectionManager/Operational**
+
+:three: **Log: Security**
+
+:four: **Log: Systemn**
 
   
 
