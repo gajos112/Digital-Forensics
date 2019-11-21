@@ -1,13 +1,11 @@
 :one: **Log: Microsoft-Windows-TerminalServices-LocalSessionManager/Operational** 
 
   :link: *Logon*
-  - [checklist](#checklist) 
  
   :link: *Session Disconnect/Reconnect*
-  - [Event_ID:_21](#Event_ID:_21)
+  - [Event ID: 21](###Event_ID:_21)
 
   :link: *Logoff* 
-  - [gobuster](#gobuster)
 
 
 :two: **Log: Microsoft-Windows-Terminal-Services-RemoteConnectionManager/Operational**
