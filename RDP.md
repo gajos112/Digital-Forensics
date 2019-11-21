@@ -3,7 +3,7 @@
   :link: *Logon*
  
   :link: *Session Disconnect/Reconnect*
-  - [Event ID: 21](###Event_ID:_21)
+  - [Event ID: 21](#ID-21)
 
   :link: *Logoff* 
 
@@ -16,7 +16,7 @@
 
   
 
-### Event_ID:_21
+### Event ID: 21
 
 
 
