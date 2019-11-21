@@ -89,7 +89,7 @@ Description: “User authentication succeeded”
 This event actually DOES NOT indicate a successful user authentication. Someone launched an RDP client, specified the target machine (possibly with a username and domain), and hit enter to make a successful network connection to the target. Nothing more, nothing less.
 
 
-Authentication
+# Authentication
 
 ## Event ID: 4624
 LogonType: 
@@ -100,8 +100,11 @@ LogonType:
 User successfully logged on to this system with the  specified TargetUserName and TargetDomainName from the specified IpAddress.
 
 ## Event ID: 4625
+
 LogonType: 
+
 -	Type 3 (Network) when NLA is Enabled (and at times even when it’s not) and/or 
+
 -	Type 10 (RemoteInteractive / a.k.a. Terminal Services / a.k.a. Remote Desktop)
 User failed to log on to this system with the specified TargetUserName and TargetDomainName from the specified IpAddress.
 
@@ -110,11 +113,12 @@ Session Disconnect/Reconnect
 ## Event ID: 4778
 Description: “A session was reconnected to a Window Station.”
  The user reconnected to an existing RDP session.
-Event ID: 4779
+ 
+## Event ID: 4779
 Description: “A session was disconnected from a Window Station.”
 The user disconnected from from an RDP session.
 
-Logoff
+# Logoff
 
 ## Event ID: 4634
 LogonType: 
