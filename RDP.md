@@ -13,29 +13,31 @@
   :link: *Logoff*
    - [Windows event ID = 23](#Event-ID-23)
 
-
-
 :two: **Log: Microsoft-Windows-Terminal-Services-RemoteConnectionManager/Operational**
   
   :link: *Network connection*
    - [Windows event ID = 1149](#Event-ID-1149)
    
-   
-   
 :three: **Log: Security**
   
   :link: *Authentication*
   
+   - [Windows event ID = 4624](#Event-ID-4624)
+   - [Windows event ID = 4625](#Event-ID-4625)
+   
   :link: *Session Disconnect/Reconnect*
- 
+  
+   - [Windows event ID = 4778](#Event-ID-4778)
+   - [Windows event ID = 4779](#Event-ID-4779)
+     
  :link: *Logoff*  
-  
-  
-  
+   - [Windows event ID = 4634](#Event-ID-4634)
+   - [Windows event ID = 4634](#Event-ID-4647)
+   
 :four: **Log: Systemn**
   
   :link: *Connection closed*  
-  
+   - [Windows event ID = 9009](#Event-ID-9009)
 
 
 
@@ -68,3 +70,63 @@ Description: “Session <X> has been disconnected, reason code <Z>”
 5 – “The client’s connection was replaced by another connection.” (Occurs when a user reconnects to an RDP session, typically paired with an Event ID 25)
 11 – “User activity has initiated the disconnect.” (Occurs when a user formally initiates an RDP disconnect, for example via the Windows Start Menu Disconnect option.)
 The user disconnected from or reconnected to an RDP session.
+
+## Event ID: 23
+Description: “Remote Desktop Services: Session logoff succeeded:”
+
+ The user has initiated a logoff. This is typically paired with an Event ID 4634 (logoff). Take note of the SessionID as a means of tracking/associating additional Event Log activity with this user’s RDP session. This event with a will also be generated upon a system shutdown/reboot.
+
+The user initiated a formal system logoff (versus a simple session disconnect).
+
+
+
+Log: Microsoft-Windows-Terminal-Services-RemoteConnectionManager/Operational
+
+Network Connection
+
+## Event ID: 1149
+Description: “User authentication succeeded”
+This event actually DOES NOT indicate a successful user authentication. Someone launched an RDP client, specified the target machine (possibly with a username and domain), and hit enter to make a successful network connection to the target. Nothing more, nothing less.
+
+
+Authentication
+
+## Event ID: 4624
+LogonType: 
+-	Type 3 (Network) when NLA is Enabled (and at times even when it’s not) followed by 
+-	Type 10 (RemoteInteractive / a.k.a. Terminal Services / a.k.a. Remote Desktop)
+-	 Type 7 from a Remote IP (if it’s a reconnection from a previous/existing RDP session)
+
+User successfully logged on to this system with the  specified TargetUserName and TargetDomainName from the specified IpAddress.
+
+## Event ID: 4625
+LogonType: 
+-	Type 3 (Network) when NLA is Enabled (and at times even when it’s not) and/or 
+-	Type 10 (RemoteInteractive / a.k.a. Terminal Services / a.k.a. Remote Desktop)
+User failed to log on to this system with the specified TargetUserName and TargetDomainName from the specified IpAddress.
+
+Session Disconnect/Reconnect
+
+## Event ID: 4778
+Description: “A session was reconnected to a Window Station.”
+ The user reconnected to an existing RDP session.
+Event ID: 4779
+Description: “A session was disconnected from a Window Station.”
+The user disconnected from from an RDP session.
+
+Logoff
+
+## Event ID: 4634
+LogonType: 
+-	10 (RemoteInteractive / a.k.a. Terminal Services / a.k.a. Remote Desktop) OR 
+-	- Type 7 from a Remote IP (if it’s a reconnection from a previous/existing RDP session)
+
+A user disconnected from, or logged off, an RDP session.
+
+## Event ID: 4647
+The user initiated a formal logoff (NOT a simple disconnect).
+
+Log: System
+## Event ID: 9009
+A user has closed out an RDP connection.
+
