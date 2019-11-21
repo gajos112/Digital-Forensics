@@ -32,7 +32,7 @@
      
  :link: *Logoff*  
    - [Windows event ID = 4634](#Event-ID-4634)
-   - [Windows event ID = 4634](#Event-ID-4647)
+   - [Windows event ID = 4647](#Event-ID-4647)
    
 :four: **Log: Systemn**
   
@@ -71,6 +71,7 @@ The user has reconnected to an existing RDP session, so long as the “Source Ne
 
 Description: “Session <X> has been disconnected by session <Y>”
  Cases where the Session ID of <X> differs from <Y> may indicate a separate RDP session has disconnected (i.e. kicked off) the given user.
+  
  The user formally disconnected from the RDP session.
 
 ### Event ID: 40
@@ -98,7 +99,7 @@ The user initiated a formal system logoff (versus a simple session disconnect).
 # Log: Microsoft-Windows-Terminal-Services-RemoteConnectionManager/Operational
 
 ### Event ID: 1149
-(Network Connection)
+**(Network Connection)**
 
 Description: “User authentication succeeded”
 
