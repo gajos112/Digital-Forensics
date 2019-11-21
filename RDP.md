@@ -5,8 +5,8 @@
    - [Windows event ID = 22](#Event-ID-22)  
   
   :link: *Session Disconnect/Reconnect*
-   - [Windows event ID = 24](#Event-ID-24-(LOGON))
-   - [Windows event ID = 25](#Event-ID-25-(LOGON))
+   - [Windows event ID = 24](#Event-ID-24-(Session Disconnect/Reconnect))
+   - [Windows event ID = 25](#Event-ID-25-(Session Disconnect/Reconnect))
    - [Windows event ID = 39](#Event-ID-39)
    - [Windows event ID = 40](#Event-ID-40)
   
