@@ -4,7 +4,7 @@
   - [checklist](#checklist) 
  
   :link: *Session Disconnect/Reconnect*
-  - [EventID:21](#gobuster)
+  - [Event ID: 21](#gobuster)
 
   :link: *Logoff* 
   - [gobuster](#gobuster)
