@@ -13,18 +13,27 @@
   :link: *Logoff*
    - [Event ID: 23](#EventID23)
 
+
+
 :two: **Log: Microsoft-Windows-Terminal-Services-RemoteConnectionManager/Operational**
   
   :link: *Network connection*
    - [Event ID: 1149](#EventID1149)
    
+   
+   
 :three: **Log: Security**
   
   :link: *Authentication*
+  
   :link: *Session Disconnect/Reconnect*
-  :link: *Logoff*  
+ 
+ :link: *Logoff*  
+  
+  
   
 :four: **Log: Systemn**
+  
   :link: *Connection closed*  
   
 
