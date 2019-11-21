@@ -42,7 +42,7 @@
 
 # Log: Microsoft-Windows-TerminalServices-LocalSessionManager/Operational
 
-## Event ID: 21 (LOGON)
+### Event ID: 21 (LOGON)
 Description: “Remote Desktop Services: Session logon succeeded:”
 Indicates successful RDP logon and session instantiation, so long as the “Source Network Address” is NOT “LOCAL”.
 
