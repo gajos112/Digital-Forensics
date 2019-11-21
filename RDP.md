@@ -1,24 +1,24 @@
 :one: **Log: Microsoft-Windows-TerminalServices-LocalSessionManager/Operational** 
 
   :link: *Logon*
-   - [Event ID: 21](#EventID21)
-   - [Event ID: 22](#EventID22)  
+   - [Windows event ID = 21](#Event-ID-21)
+   - [Windows event ID = 22](#Event-ID-22)  
   
   :link: *Session Disconnect/Reconnect*
-   - [Event ID: 24](#EventID24)
-   - [Event ID: 25](#EventID25)
-   - [Event ID: 39](#EventID39)
-   - [Event ID: 40](#EventID40)
+   - [Windows event ID = 24](#Event-ID-24)
+   - [Windows event ID = 25](#Event-ID-25)
+   - [Windows event ID = 39](#Event-ID-39)
+   - [Windows event ID = 40](#Event-ID-40)
   
   :link: *Logoff*
-   - [Event ID: 23](#EventID23)
+   - [Windows event ID = 23](#Event-ID-23)
 
 
 
 :two: **Log: Microsoft-Windows-Terminal-Services-RemoteConnectionManager/Operational**
   
   :link: *Network connection*
-   - [Event ID: 1149](#EventID1149)
+   - [Windows event ID = 1149](#Event-ID-1149)
    
    
    
@@ -37,7 +37,7 @@
   :link: *Connection closed*  
   
 
-### EventID21
+### Event ID 21
 
 
 
