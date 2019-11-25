@@ -1,6 +1,4 @@
-# Remote Access
-
-## Remote Desktop (RDP)
+# Remote Desktop (RDP)
 
 ### Event Logs
 
@@ -51,4 +49,10 @@
    - bcache##.bmc
    - cache####.bin
 
-### Map Network Shares
+### Map Network Shares - net.exe to C$ or Admin$
+
+### Event Logs
+
+### Registry
+
+### File system
