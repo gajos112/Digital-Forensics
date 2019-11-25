@@ -18,17 +18,16 @@
 ### Registry
 
 - Remote desktop destinations are tracked per-user
- - NTUSER\Software\Microsoft\TerminalServer Client\Servers
+  - NTUSER\Software\Microsoft\TerminalServer Client\Servers
 
 - ShimCache – **SYSTEM**
   - mstsc.exe - Remote Desktop Client
   
 - BAM/DAM – SYSTEM – Last Time Executed 
- - mstsc.exe Remote Desktop Client
+  - mstsc.exe Remote Desktop Client
 
-- AmCache.hve – First Time
-Executed
- mstsc.exe
+- AmCache.hve – First Time Executed
+   - mstsc.exe
 
 - UserAssist – NTUSER.DAT
  mstsc.exe Remote
