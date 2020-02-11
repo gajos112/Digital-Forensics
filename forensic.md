@@ -1,4 +1,5 @@
 :one: **Artefacts**
+
   :link: [Registry](#Registry)
 
 :one: **Persistence**
