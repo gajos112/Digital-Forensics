@@ -6,9 +6,9 @@
 
   :link: *AutoStart Persistence Locations*
   
-  # Artefacts
+# Artefacts
   
-  ## Registry
+## Registry
   
 - HKEY_LOCAL_MACHINE \SYSTEM : **\system32\config\system**
 - HKEY_LOCAL_MACHINE \SAM : **\system32\config\sam**
@@ -19,13 +19,13 @@
 - C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.DAT
 - C:\Users\Username\Username.DAT
 
-  # Persistence
+# Persistence
   
-  ## AutoStart Persistence Locations
+## AutoStart Persistence Locations
   
-  - NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run
-  - NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce
-  - SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce
-  - SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
-  - SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-  - %AppData%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+- NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run
+- NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce
+- SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce
+- SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
+- SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+- %AppData%\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
