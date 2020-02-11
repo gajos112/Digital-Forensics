@@ -12,7 +12,7 @@
    - [at.exe](#at.exe)
    - [schtasks.exe](#schtasks.exe)
    
-   :link: [DLL Persistence Attacks](#DLL- Persistence- Attacks)
+   :link: [DLL Persistence Attacks](#DLL-Persistence- Attacks)
    - DLL Search Order Hijacking
    - Phantom DLL
    - DLL Side-Loading
