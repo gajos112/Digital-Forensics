@@ -5,6 +5,11 @@
 :one: **Persistence**
 
   :link: [AutoStart Persistence Locations](#AutoStart-Persistence-Locations)
+  :link: [Windows Services](#Windows-Services)
+  :link: [Scheduled Tasks](#Scheduled-Tasks)
+    
+    - at.exe
+    - schtasks.exe
   
 # Artefacts
   
