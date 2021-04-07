@@ -4,7 +4,7 @@
 description="test"
 progid="test"
 version="1.00"
-classid="{F0001111-0000-0000-0000-0000FEEDACDC}"
+classid="{AAAA1111-0000-0000-0000-0000FEEDACDC}"
 remotable="true">
 </registration>
 <script language="JScript">
