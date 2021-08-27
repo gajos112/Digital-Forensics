@@ -1,1 +1,1 @@
-Wscript.Echo "elo"
+WScript.Echo (elo)
